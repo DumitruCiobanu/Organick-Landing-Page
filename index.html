@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Organick: Landing Page Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header-section" class="header">
+        <div class="header__logo-box">
+          <img
+            src="./public/img/logo.svg"
+            alt="Organick logo"
+            class="header__logo"
+          />
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar__menu">
+            <li class="header__navbar__item font-body-2">
+              <a href="#hero-section" class="header__navbar__link">Home</a>
+            </li>
+            <li class="header__navbar__item font-body-2">
+              <a href="#about-section" class="header__navbar__link">About us</a>
+            </li>
+            <li class="header__navbar__item font-body-2">
+              <a href="#products-section" class="header__navbar__link">Shop</a>
+            </li>
+            <li class="header__navbar__item font-body-2">
+              <a href="#list-cards-section" class="header__navbar__link"
+                >Pages</a
+              >
+            </li>
+            <li class="header__navbar__item font-body-2">
+              <a href="#subscribe-section" class="header__navbar__link"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger">
+            <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="hamburger__button">
+            <span class="hamburger__icon">&nbsp;</span> 
+          </label>
+            <div class="hamburger__background">&nbsp;</div>
+            <img src="./public/img/logo.svg" alt="Organick logo" class="hamburger__logo"/>
+
+            <nav class="hamburger__nav">
+            <ul class="hamburger__list">
+              <li class="hamburger__item ">
+                <a href="#hero-section" class="hamburger__link font-body-2">Home</a>
+              </li>
+              <li class="hamburger__item ">
+                <a href="#about-section" class="hamburger__link font-body-2">About us</a>
+              </li>
+              <li class="hamburger__item ">
+                <a href="#products-section" class="hamburger__link font-body-2">Shop</a>
+              </li>
+              <li class="hamburger__item ">
+                <a href="#list-cards-section" class="hamburger__link font-body-2"
+                  >Pages</a
+                >
+              </li>
+              <li class="hamburger__item ">
+                <a href="#subscribe-section" class="hamburger__link font-body-2"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+
+            <div class="social-media__icons">
+              <a
+                href="https://www.facebook.com/griddynamicsglobal"
+                class="social-media__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-fb.svg"
+                  alt="Facebook icon"
+                  class="social-media__icons__bg__icon"
+                />
+              </a>
+
+              <a
+                href="https://x.com/GridDynamics?s=20"
+                class="social-media__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-tw.svg"
+                  alt="Twitter icon"
+                  class="social-media__icons__bg__icon"
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/griddynamics_global/"
+                class="social-media__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-inst.svg"
+                  alt="Instagram icon"
+                  class="social-media__icons__bg__icon"
+                />
+              </a>
+
+              <a
+                href="https://pin.it/6iHphh5"
+                class="social-media__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-pin.svg"
+                  alt="Pinterest icon"
+                  class="social-media__icons__bg__icon"
+                />
+              </a>
+            </div>
+          </nav>
+          </div>
+        </nav>
+      </header>
+
+      <section id="hero-section" class="hero">
+        <div class="hero__content">
+          <p class="hero__content__heading-sub font-display">
+            Made with nature
+          </p>
+          <h1 class="hero__content__heading-main heading-1">
+            Welcome to the world of nature and organic.
+          </h1>
+
+          <a href="#about-section"
+            ><button class="hero__content__btn btn-primary btn-primary-small">
+              <span class="font-body-2 font-body-1">Explore now</span>
+              <img
+                src="./public/img/icons-arrow.svg"
+                alt="Arrow icon"
+                class="hero__content__btn__icon arrow"
+              /></button
+          ></a>
+        </div>
+      </section>
+
+      <section id="offers-section" class="offers">
+        <div class="offers__content">
+          <div class="offer-card offer-card__1">
+            <div class="offer-card__text-box">
+              <p class="text-box__heading-sub font-display font-white">
+                Natural!!
+              </p>
+              <h3 class="text-box__heading-main heading-3 font-white">
+                Get Garden Fresh Fruits
+              </h3>
+            </div>
+          </div>
+
+          <div class="offer-card offer-card__2">
+            <div class="offer-card__text-box">
+              <p class="text-box__heading-sub font-display">Offer!!</p>
+              <h3 class="text-box__heading-main heading-3">
+                Get 10% off on Vegetables
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section" class="about">
+        <div class="content">
+          <div class="content__img">
+            <img src="./public/img/image-about-us.png" alt="Citrus image" />
+          </div>
+          <div class="content__info">
+            <p class="content__info__heading-sub font-display">About us</p>
+            <h2 class="content__info__heading-main heading-2">
+              We Believe in Organic Foods For Strong Health
+            </h2>
+            <p class="content__info__paragraph font-body-1">
+              Welcome to the world of natural and organic. Here you can discover
+              the bounty of nature. We have grown on the principles of health,
+              and care. We aim to give our customers a healthy chemical-free
+              meal for perfect nutrition.
+            </p>
+
+            <div class="features">
+              <div class="features__item">
+                <div class="features__item__icon-box">
+                  <img
+                    src="./public/img/icons-food.svg"
+                    alt="Food icon"
+                    class="features__item__icon"
+                  />
+                </div>
+
+                <div class="features__item__info">
+                  <p class="features__item__info__heading font-subtitle-2">
+                    Organic Foods Only
+                  </p>
+                  <p class="features__item__info__description font-body-1">
+                    The Product that you ordered will be verified if available.
+                    If it is, we will start to move on with the next step.
+                  </p>
+                </div>
+              </div>
+
+              <div class="features__item">
+                <div class="features__item__icon-box">
+                  <img
+                    src="./public/img/icons-group-5.svg"
+                    alt="Mailbox icon"
+                    class="features__item__icon"
+                  />
+                </div>
+
+                <div class="features__item__info">
+                  <p class="features__item__info__heading font-subtitle-2">
+                    Quality Standards
+                  </p>
+                  <p class="features__item__info__description font-body-1">
+                    Once your product is packed it will be delivered to your
+                    nearby locality and you can directly visit the shop to buy
+                    the product.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="#offer-products-section"
+              ><button class="about__btn btn-secondary">
+                <span class="font-body-2">Shop now</span>
+                <img
+                  src="./public/img/icons-arrow.svg"
+                  alt="Arrow icon"
+                  class="about__btn__icon arrow"
+                /></button
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="products-section" class="products">
+        <p class="products__heading-sub font-display">Organic</p>
+        <h2 class="products__heading-main heading-2">Our Products</h2>
+
+        <div class="container-product-cards">
+          <div class="product-card">
+            <div class="product-card__label label">
+              <span class="font-label-2 font-white">Vegetable</span>
+            </div>
+
+            <img
+              src="./public/img/broccoli.png"
+              alt="Broccoli image"
+              class="product-card__img"
+            />
+
+            <p class="product-card__name font-subtitle-1">Calabrese Broccoli</p>
+
+            <div class="bottom">
+              <div class="bottom__price">
+                <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+              </div>
+
+              <div class="bottom__rating">
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt="Star image"
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt="Star image"
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt="Star image"
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt="Star image"
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt="Star image"
+                  class="bottom__rating__star"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__label label">
+              <span class="font-label-2 font-white">Vegetable</span>
+            </div>
+            <img
+              src="./public/img/corn.png"
+              alt="Corn image"
+              class="product-card__img"
+            />
+            <p class="product-card__name font-subtitle-1">Fresh Corn</p>
+
+            <div class="bottom">
+              <div class="bottom__price">
+                <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+              </div>
+              <div class="bottom__rating">
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__label label">
+              <span class="font-label-2 font-white">Millets</span>
+            </div>
+            <img
+              src="./public/img/pistachio.png"
+              alt="Pistachio image"
+              class="product-card__img"
+            />
+            <p class="product-card__name font-subtitle-1">Dried Pistachio</p>
+
+            <div class="bottom">
+              <div class="bottom__price">
+                <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+              </div>
+              <div class="bottom__rating">
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__label label">
+              <span class="font-label-2 font-white">Vegetable</span>
+            </div>
+            <img
+              src="./public/img/tomato.png"
+              alt="Tomato image"
+              class="product-card__img"
+            />
+            <p class="product-card__name font-subtitle-1">Vegan Red Tomato</p>
+
+            <div class="bottom">
+              <div class="bottom__price">
+                <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+              </div>
+              <div class="bottom__rating">
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__label label">
+              <span class="font-label-2 font-white">Fruits</span>
+            </div>
+            <img
+              src="./public/img/almonds.png"
+              alt="Broccoli image"
+              class="product-card__img"
+            />
+            <p class="product-card__name font-subtitle-1">Organic Almonds</p>
+
+            <div class="bottom">
+              <div class="bottom__price">
+                <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+              </div>
+              <div class="bottom__rating">
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__label label">
+              <span class="font-label-2 font-white">Millets</span>
+            </div>
+            <img
+              src="./public/img/hazelnut.png"
+              alt="Broccoli image"
+              class="product-card__img"
+            />
+            <p class="product-card__name font-subtitle-1">Brown Hazelnut</p>
+
+            <div class="bottom">
+              <div class="bottom__price">
+                <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+              </div>
+              <div class="bottom__rating">
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+                <img
+                  src="./public/img/icons-star.svg"
+                  alt=""
+                  class="bottom__rating__star"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials-section" class="testimonials">
+        <div class="testimonials__content">
+          <img
+            src="./public/img/lemon-left.png"
+            alt="Lemons, cinnamon and chamomile image"
+            class="img-left"
+          />
+
+          <img
+            src="./public/img/lemon-left-tab.png"
+            alt="Lemons, cinnamon and chamomile image tight"
+            class="img-left-tab"
+          />
+
+          <div class="feedback-box">
+            <p class="feedback-box__heading-sub font-display">Testimonial</p>
+            <h2 class="feedback-box__heading-main heading-2">
+              What Are Our Customers Saying?
+            </h2>
+            <img
+              src="./public/img/sara-taylor.png"
+              alt="client image"
+              class="feedback-box__img"
+            />
+            <div class="feedback-box__rating">
+              <img
+                src="./public/img/icons-star.svg"
+                alt="Star image"
+                class="feedback-box__rating__star"
+              />
+              <img
+                src="./public/img/icons-star.svg"
+                alt="Star image"
+                class="feedback-box__rating__star"
+              />
+              <img
+                src="./public/img/icons-star.svg"
+                alt="Star image"
+                class="feedback-box__rating__star"
+              />
+              <img
+                src="./public/img/icons-star.svg"
+                alt="Star image"
+                class="feedback-box__rating__star"
+              />
+              <img
+                src="./public/img/icons-star.svg"
+                alt="Star image"
+                class="feedback-box__rating__star"
+              />
+            </div>
+            <p class="feedback-box__paragraph font-body-1">
+              The quality of organic produce is excellent, the service is
+              outstanding, and the taste of the food reminds me of my childhood
+              when we were growing our own.
+            </p>
+            <p class="feedback-box__name font-subtitle-4">Sara Taylor</p>
+            <p class="feedback-box__role-label font-label-1">Consumer</p>
+          </div>
+
+          <img
+            src="./public/img/lemon-right.png"
+            alt="Lemons, cinnamon and chamomile image"
+            class="img-right"
+          />
+
+          <img src="././public/img/lemon-right-tab.png" alt="Lemons, cinnamon and chamomile image tight" class="img-right-tab">
+        </div>
+      </section>
+
+      <section id="offer-products-section" class="offer-products">
+        <div class="offer-products__content">
+          <div class="heading-group">
+            <div class="heading-group__text">
+              <p class="heading-group__text__heading-sub font-display">
+                Offer Products
+              </p>
+
+              <h2
+                class="heading-group__text__heading-main heading-2 font-white"
+              >
+                We Offer Organic for You
+              </h2>
+            </div>
+            <a href="#products-section"
+              ><button class="heading-group__btn btn-primary">
+                <span class="font-body-2">View All Products</span>
+                <img
+                  src="./public/img/icons-arrow.svg"
+                  alt="Arrow icon"
+                  class="heading-group__btn__icon arrow"
+                /></button
+            ></a>
+          </div>
+          <div class="cards-group">
+            <div class="product-card">
+              <div class="product-card__label label">
+                <span class="font-body-2 font-white">Vegetable</span>
+              </div>
+              <img
+                src="./public/img/tomato.png"
+                alt="Tomato image"
+                class="product-card__img"
+              />
+              <p class="product-card__name font-subtitle-1">Vegan Red Tomato</p>
+
+              <div class="bottom">
+                <div class="bottom__price">
+                  <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                  <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+                </div>
+                <div class="bottom__rating">
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__label label">
+                <span class="font-body-2 font-white">Fruits</span>
+              </div>
+              <img
+                src="./public/img/almonds.png"
+                alt="Broccoli image"
+                class="product-card__img"
+              />
+              <p class="product-card__name font-subtitle-1">Organic Almonds</p>
+
+              <div class="bottom">
+                <div class="bottom__price">
+                  <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                  <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+                </div>
+                <div class="bottom__rating">
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__label label">
+                <span class="font-body-2 font-white">Vegetable</span>
+              </div>
+              <img
+                src="./public/img/corn.png"
+                alt="Corn image"
+                class="product-card__img"
+              />
+              <p class="product-card__name font-subtitle-1">Fresh Corn</p>
+
+              <div class="bottom">
+                <div class="bottom__price">
+                  <p class="bottom__price__old font-body-1">$ 25.00 USD</p>
+                  <p class="bottom__price__new font-body-3">$ 21.00 USD</p>
+                </div>
+                <div class="bottom__rating">
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                  <img
+                    src="./public/img/icons-star.svg"
+                    alt=""
+                    class="bottom__rating__star"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="eco-friendly-section" class="eco-friendly">
+        <div class="eco-friendly__content">
+          <div class="eco-friendly__content__img">
+            <img src="./public/img/field.png" alt="Nature image" />
+          </div>
+
+          <div class="eco-friendly__content__card">
+            <div class="eco-friendly__content__card__heading">
+              <p class="eco-friendly__content__card__heading__sub font-display">
+                Eco friendly
+              </p>
+              <h2 class="eco-friendly__content__card__heading__main heading-2">
+                From our Farm to your Home
+              </h2>
+            </div>
+
+            <div class="eco-friendly__content__card__benefit-box">
+              <div class="eco-friendly__content__card__benefit-box__group">
+                <p
+                  class="eco-friendly__content__card__benefit-box__group__title font-subtitle-3"
+                >
+                  Choose Your Products
+                </p>
+                <p
+                  class="eco-friendly__content__card__benefit-box__group__paragraph font-body-1"
+                >
+                  In our listing, we have several collections of organic
+                  products. This is the place where you need to choose the
+                  product you want.
+                </p>
+              </div>
+              <div class="eco-friendly__content__card__benefit-box__group">
+                <p
+                  class="eco-friendly__content__card__benefit-box__group__title font-subtitle-3"
+                >
+                  Farmers will produce it
+                </p>
+                <p
+                  class="eco-friendly__content__card__benefit-box__group__paragraph font-body-1"
+                >
+                  The Product that you ordered will be verified if available. If
+                  it is, we will start to move on with the next step.
+                </p>
+              </div>
+              <div class="eco-friendly__content__card__benefit-box__group">
+                <p
+                  class="eco-friendly__content__card__benefit-box__group__title font-subtitle-3"
+                >
+                  We Can Deliver too
+                </p>
+                <p
+                  class="eco-friendly__content__card__benefit-box__group__paragraph font-body-1"
+                >
+                  If you are not comfortable going to the nearby market place we
+                  can deliver your product to your doorstep.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="list-cards-section" class="list-cards">
+        <div class="list-cards__container">
+          <div class="list-card">
+            <img
+              src="./public/img/fruit-juice.png"
+              alt="Fruit juice image"
+              class="list-card__img"
+            />
+            <a class="list-card__link font-subtitle-3"
+              ><span>Fresh juice</span></a
+            >
+          </div>
+
+          <div class="list-card">
+            <img
+              src="./public/img/organic-food.png"
+              alt="Organic food image"
+              class="list-card__img"
+            />
+            <a class="list-card__link font-subtitle-3"
+              ><span>Organic food</span></a
+            >
+          </div>
+
+          <div class="list-card">
+            <img
+              src="./public/img/cookies.png"
+              alt="Nuts cookies image"
+              class="list-card__img"
+            />
+            <a class="list-card__link font-subtitle-3"
+              ><span>Nuts cookies</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="news-section" class="news">
+        <div class="news__content">
+          <div class="heading-group">
+            <div class="heading-group__text">
+              <p class="heading-group__text__heading-sub font-display">News</p>
+
+              <h2 class="heading-group__text__heading-main heading-2">
+                Discover content about organic products
+              </h2>
+            </div>
+            <button class="heading-group__btn btn-outline">
+              <span class="font-body-2">More news</span>
+              <img
+                src="./public/img/icons-arrow.svg"
+                alt="Arrow icon"
+                class="heading-group__btn__icon arrow"
+              />
+            </button>
+          </div>
+
+          <div class="news-cards-container">
+            <div class="news-card">
+              <img
+                src="./public/img/salad.png"
+                alt="Salad image"
+                class="news-card__img"
+              />
+
+              <div class="news-card__date">
+                <h4 class="news-card__date__day heading-4">14</h4>
+                <p class="news-card__date__month font-label-1">Feb</p>
+              </div>
+
+              <div class="news-card__article">
+                <div class="news-card__article__group">
+                  <div class="news-card__article__group__user">
+                    <img
+                      src="./public/img/cards-icons-user.svg"
+                      alt="User icon"
+                      class="news-card__article__group__user__icon"
+                    />
+                    <p
+                      class="news-card__article__group__user__name font-body-1"
+                    >
+                      Kristina Castle
+                    </p>
+                  </div>
+
+                  <p class="news-card__article__group__heading font-subtitle-3">
+                    Everything You Need to Know About Organic
+                  </p>
+
+                  <p class="news-card__article__group__paragraph font-body-1">
+                    Organic farming is one of the ways you can still experience
+                    the real world.
+                  </p>
+
+                  <button class="news-card__article__group__btn btn-link">
+                    <span class="font-body-1">View more</span>
+                    <img
+                      src="./public/img/icons-arrow.svg"
+                      alt="Arrow icon"
+                      class="news-card__article__group__btn__icon arrow"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <img
+                src="./public/img/tomatoes-bg.png"
+                alt="Tomatoes image"
+                class="news-card__img"
+              />
+
+              <div class="news-card__date">
+                <h4 class="news-card__date__day heading-4">24</h4>
+                <p class="news-card__date__month font-label-1">Sep</p>
+              </div>
+
+              <div class="news-card__article">
+                <div class="news-card__article__group">
+                  <div class="news-card__article__group__user">
+                    <img
+                      src="./public/img/cards-icons-user.svg"
+                      alt="User icon"
+                      class="news-card__article__group__user__icon"
+                    />
+                    <p
+                      class="news-card__article__group__user__name font-body-1"
+                    >
+                      Alex Louis
+                    </p>
+                  </div>
+
+                  <p class="news-card__article__group__heading font-subtitle-3">
+                    Organic Fruits: Surprising Benefits and Facts
+                  </p>
+
+                  <p class="news-card__article__group__paragraph font-body-1">
+                    The world of nature has grown on the principles of health,
+                    ecology, and care.
+                  </p>
+
+                  <button class="news-card__article__group__btn btn-link">
+                    <span class="font-body-1">View more</span>
+                    <img
+                      src="./public/img/icons-arrow.svg"
+                      alt="Arrow icon"
+                      class="news-card__article__group__btn__icon arrow"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe-section" class="subscribe">
+        <div class="subscribe__content">
+          <h2 class="subscribe__content__heading heading-2 font-white">
+            Subscribe to our Newsletter
+          </h2>
+          <div class="subscribe__content__form">
+            <input
+              type="email"
+              class="subscribe__content__form__input input font-body-1"
+              placeholder="Enter your email address"
+              id="email"
+            />
+            <label
+              for="email"
+              class="subscribe__content__form__label font-body-1"
+              >Enter your email address</label
+            >
+            <button class="subscribe__content__form__btn btn-secondary">
+              <span class="font-body-2 font-white">Subscribe</span>
+              <img
+                src="./public/img/icons-arrow.svg"
+                alt="Arrow icon"
+                class="subscribe__content__form__btn__icon arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer-section" class="footer">
+        <div class="footer__main">
+          <div class="footer__main__left">
+            <h4 class="footer__main__left__heading heading-4">Contact Us</h4>
+            <div class="footer__main__left__contacts">
+              <div class="footer__main__left__contacts__group">
+                <p
+                  class="footer__main__left__contacts__group__title font-body-3"
+                >
+                  Email
+                </p>
+                <a
+                  href="mailto:needhelp@organick.com"
+                  class="footer__main__left__contacts__group__info font-body-1"
+                  >needhelp@organick.com</a
+                >
+              </div>
+              <div class="footer__main__left__contacts__group">
+                <p
+                  class="footer__main__left__contacts__group__title font-body-3"
+                >
+                  Phone
+                </p>
+                <a
+                  href="tel:+12312541452"
+                  class="footer__main__left__contacts__group__info font-body-1"
+                  >123 (1254) 1452</a
+                >
+              </div>
+              <div class="footer__main__left__contacts__group">
+                <p
+                  class="footer__main__left__contacts__group__title font-body-3"
+                >
+                  Address
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/Vjjj1UfFDy9F8AWA8"
+                  class="footer__main__left__contacts__group__info font-body-1"
+                  target="_blank"
+                  >88 Road, Brooklyn Street, USA</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__main__center">
+            <a href="#header-section"
+              ><img
+                src="./public/img/logo.svg"
+                alt="Organick logo"
+                class="footer__main__center__logo"
+            /></a>
+            <p class="footer__main__center__paragraph font-body-1">
+              We are a popular farming company aspiring to be leaders in the
+              Organic food industry.
+            </p>
+            <div class="footer__main__center__icons">
+              <a
+                href="https://www.facebook.com/griddynamicsglobal"
+                class="footer__main__center__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-fb.svg"
+                  alt="Facebook icon"
+                  class="footer__main__center__icons__bg__icon"
+                />
+              </a>
+
+              <a
+                href="https://x.com/GridDynamics?s=20"
+                class="footer__main__center__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-tw.svg"
+                  alt="Twitter icon"
+                  class="footer__main__center__icons__bg__icon"
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/griddynamics_global/"
+                class="footer__main__center__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-inst.svg"
+                  alt="Instagram icon"
+                  class="footer__main__center__icons__bg__icon"
+                />
+              </a>
+
+              <a
+                href="https://pin.it/6iHphh5"
+                class="footer__main__center__icons__bg"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icons-social-pin.svg"
+                  alt="Pinterest icon"
+                  class="footer__main__center__icons__bg__icon"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__main__right">
+            <h4 class="footer__main__right__heading heading-4">
+              Utility pages
+            </h4>
+            <div class="footer__main__right__links">
+              <a
+                href="#footer-section"
+                class="footer__main__right__links__page font-body-1"
+                >Style Guide</a
+              >
+              <a
+                href="#footer-section"
+                class="footer__main__right__links__page font-body-1"
+                >Protected</a
+              >
+              <a
+                href="#footer-section"
+                class="footer__main__right__links__page font-body-1"
+                >Page Not Found</a
+              >
+              <a
+                href="#footer-section"
+                class="footer__main__right__links__page font-body-1"
+                >Changelog</a
+              >
+              <a
+                href="#footer-section"
+                class="footer__main__right__links__page font-body-1"
+                >Licenses</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright font-body-1">
+          <a href="#header-section">Copyright &copy; Organick</a>
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

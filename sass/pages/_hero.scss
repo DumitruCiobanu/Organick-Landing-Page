@@ -1,0 +1,39 @@
+.hero {
+  display: flex;
+  height: 75.2rem;
+  align-items: center;
+  background: url(../../public/img/image.png) lightgray center / cover no-repeat;
+
+  &__content {
+    width: 49.6rem;
+    margin-left: 4rem;
+
+    &__heading-sub {
+      width: 24.1rem;
+    }
+
+    &__heading-main {
+      height: 25.6rem;
+    }
+
+    &__btn {
+      margin-top: 3.6rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    height: 65rem;
+  }
+
+  @include respond(phone) {
+    height: 53.6rem;
+    align-items: center;
+    background: url(../../public/img/hero-mobile.png) lightgray center / cover
+      no-repeat;
+
+    &__content {
+      width: 33.6rem;
+      margin-left: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.news-card {
+  width: auto;
+  height: auto;
+  border-radius: 3.2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3.2rem;
+
+    @include respond(phone) {
+      
+    }
+  }
+
+  &__date {
+    width: 8rem;
+    height: 8rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.1rem;
+    left: 2.9rem;
+
+    &__day {
+    }
+
+    &__month {
+    }
+  }
+
+  &__article {
+    max-width: 100%;
+    box-shadow: 16px 24px 52px -8px rgba(0, 0, 0, 0.15);
+    background: white;
+    border-radius: 3.2rem;
+    padding: 4.8rem 4.8rem 5.6rem 4.8rem;
+    position: absolute;
+    top: 49%;
+    margin: 0 2.4rem;
+
+    &__group {
+      max-width: 51.5rem;
+
+      &__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 15.4rem;
+        height: 3.2rem;
+
+        &__icon {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+
+        &__name {
+        }
+      }
+
+      &__heading {
+        margin: 1.6rem 0;
+      }
+
+      &__paragraph {
+        max-width: 51.5rem;
+      }
+
+      &__btn {
+        margin-top: 2.4rem;
+        &__icon {
+        }
+      }
+    }
+
+    &:hover {
+      transition: all 0.1s;
+      transform: translateY(-0.01rem) scale(1.01);
+      box-shadow: $shadow-1;
+    }
+  }
+}

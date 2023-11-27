@@ -1,0 +1,43 @@
+.list-cards {
+    max-width: 144rem;
+    height: auto;
+    background: $color-grey-1;
+    padding: 8rem 4rem;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    @include respond(big-desk) {
+        padding: 6.4rem 4rem;
+        &__container {
+            justify-content: space-evenly;
+        }
+    }
+
+    @include respond(tab-land) {
+        padding: 6.4rem 4rem;
+        &__container {
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        padding: 6.4rem 4rem;
+        &__container {
+            flex-wrap: wrap;
+            gap: 2.6rem;
+        }
+    }
+
+    @include respond(phone) {
+        padding: 6.4rem 1.6rem;
+        &__container {
+            flex-wrap: wrap;
+            gap: 2.4rem;
+        }
+    }
+}

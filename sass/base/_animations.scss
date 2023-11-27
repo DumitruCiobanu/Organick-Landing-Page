@@ -1,0 +1,43 @@
+// ANIMATIONS:
+
+@keyframes pulsate {
+    0% {
+      transform: scale(1) translateX(2.6rem);
+    }
+    
+    50% {
+      transform: scale(1.25) translateX(2.6rem);
+    }
+    
+    100% {
+      transform: scale(1) translateX(2.6rem);
+    }
+    }
+
+    @keyframes pulsate-2 {
+        0% {
+          transform: scale(1);
+        }
+        
+        50% {
+          transform: scale(1.25);
+        }
+        
+        100% {
+          transform: scale(1);
+        }
+        }
+
+        @keyframes pulsate-3 {
+            0% {
+              transform: scale(1) translateX(2.2rem);
+            }
+            
+            50% {
+              transform: scale(1.2) translateX(2.2rem);
+            }
+            
+            100% {
+              transform: scale(1) translateX(2.2rem);
+            }
+            }
