@@ -1387,10 +1387,10 @@ body {
   cursor: pointer;
 }
 .offer-card__1 {
-  background: url("../../public/img/image-1.png") no-repeat 23% top/cover;
+  background: url("../public/img/image-1.png") no-repeat 23% top/cover;
 }
 .offer-card__2 {
-  background: url("../../public/img/image-2.png") no-repeat 30% top/cover;
+  background: url("../public/img/image-2.png") no-repeat 30% top/cover;
 }
 .offer-card__text-box {
   width: 26rem;
@@ -1986,7 +1986,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url("../../public/img/oranges-on-blue.png"), lightgray center/cover no-repeat;
+  background: url("../public/img/oranges-on-blue.png"), lightgray center/cover no-repeat;
 }
 .subscribe__content__heading {
   width: 32.3rem;
@@ -2047,7 +2047,7 @@ body {
 @media only screen and (min-width: 112.5em) {
   .subscribe__content {
     padding: 10.4rem 6.4rem;
-    background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31%/cover;
+    background: lightgray url("../public/img/oranges-on-blue.png") no-repeat 31%/cover;
   }
   .subscribe__content__heading {
     width: 51rem;
@@ -2076,7 +2076,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31%/cover;
+    background: lightgray url("../public/img/oranges-on-blue.png") no-repeat 31%/cover;
   }
   .subscribe__content__heading {
     margin-bottom: 3.2rem;
@@ -2105,7 +2105,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31%/cover;
+    background: lightgray url("../public/img/oranges-on-blue.png") no-repeat 31%/cover;
   }
   .subscribe__content__heading {
     margin-bottom: 3.2rem;
@@ -2134,7 +2134,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31%/cover;
+    background: lightgray url("../public/img/oranges-on-blue.png") no-repeat 31%/cover;
   }
   .subscribe__content__heading {
     width: 30.4rem;
