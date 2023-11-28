@@ -1322,7 +1322,7 @@ body {
   display: flex;
   height: 75.2rem;
   align-items: center;
-  background: url(../../public/img/image.png) lightgray center/cover no-repeat;
+  background: url(../public/img/image.png) lightgray center/cover no-repeat;
 }
 .hero__content {
   width: 49.6rem;
