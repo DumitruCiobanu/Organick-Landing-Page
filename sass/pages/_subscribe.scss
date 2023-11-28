@@ -1,0 +1,219 @@
+.subscribe {
+  max-width: 144rem;
+  height: auto;
+  padding: 0 4rem;
+
+  &__content {
+    max-width: 136rem;
+    border-radius: 3.2rem;
+    overflow: hidden;
+    padding: 10.4rem 6.4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url(../../public/img/oranges-on-blue.png),
+      lightgray center / cover no-repeat;
+
+    &__heading {
+      width: 32.3rem;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: auto;
+      height: 8rem;
+      gap: 2.4rem;
+
+      &__input {
+        width: 40.7rem;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(black, 0.1);
+          border: 3px solid $color-primary;
+          color: $color-grey-5;
+        }
+
+        &:focus:invalid {
+          border: 3px solid $color-error;
+        }
+
+        &::-webkit-input-placeholder {
+          color: $color-grey-5;
+        }
+      }
+
+      &__label {
+        top: 8rem;
+        left: 5rem;
+        margin-top: 0.7rem;
+        display: block;
+        transition: all 0.3s;
+        position: absolute;
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 3.2rem;
+      }
+
+      &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+      }
+
+      &__btn {
+        &__icon {
+          filter: $filter-white;
+        }
+
+        &:hover {
+          background-color: $color-secondary;
+          transform: translateY(0rem);
+          img {
+            filter: $filter-white;
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(big-desk) {
+    &__content {
+      padding: 10.4rem 6.4rem;
+      background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31% / cover;
+
+      &__heading {
+        width: 51rem;
+      }
+
+      &__form {
+        justify-content: end;
+        gap: 1.6rem;
+        width: 100%;
+
+        &__label {
+          top: -4.5rem;
+          left: auto;
+          right: 36.5rem;
+        }
+
+        &__input:placeholder-shown + &__label {
+          transform: translateY(4rem);
+        }
+      }
+    }
+  }
+
+  @include respond(tab-land) {
+    padding: 6.4rem 4rem;
+    height: auto;
+
+    &__content {
+      padding: 3.2rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31% / cover;
+
+      &__heading {
+        margin-bottom: 3.2rem;
+      }
+
+      &__form {
+        justify-content: end;
+        gap: 1.6rem;
+        width: 100%;
+
+        &__label {
+          top: -4.5rem;
+          left: auto;
+          right: 36.5rem;
+        }
+
+        &__input:placeholder-shown + &__label {
+          transform: translateY(4rem);
+        }
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 6.4rem 4rem;
+    height: auto;
+
+    &__content {
+      padding: 3.2rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31% / cover;
+
+      &__heading {
+        margin-bottom: 3.2rem;
+      }
+
+      &__form {
+        justify-content: end;
+        gap: 1.6rem;
+        width: 100%;
+
+        &__label {
+          top: -4.5rem;
+          left: auto;
+          right: 36.5rem;
+        }
+
+        &__input:placeholder-shown + &__label {
+          transform: translateY(4rem);
+        }
+      }
+    }
+  }
+
+  @include respond(phone) {
+    padding: 6.4rem 1.6rem;
+    height: auto;
+
+    &__content {
+      padding: 3.2rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: lightgray url(../../public/img/oranges-on-blue.png) no-repeat 31% / cover;
+
+      &__heading {
+        width: 30.4rem;
+        margin-bottom: 3.2rem;
+      }
+
+      &__form {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 1.6rem;
+        width: 100%;
+
+        &__input {
+          max-width: 100%;
+        }
+
+        &__label {
+          top: -4.5rem;
+        }
+
+        &__input:placeholder-shown + &__label {
+          transform: translateY(4rem);
+        }
+      }
+    }
+  }
+}

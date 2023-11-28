@@ -1,0 +1,353 @@
+.footer {
+  padding-top: 9.6rem;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    margin: 0 4rem;
+
+    &__left {
+      max-width: 31.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 4rem;
+      padding-top: 0.8rem;
+
+      &__heading {
+        text-align: right;
+      }
+
+      &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 3.2rem;
+        margin-top: 4.8rem;
+
+        &__group {
+          display: flex;
+          width: 26.5rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+
+          &__title {
+            color: $color-grey-5;
+            text-align: right;
+          }
+
+          &__info {
+            color: $color-grey-5;
+            text-align: right;
+            text-decoration: none;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+
+    &__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 66.4rem;
+      margin: 0 auto;
+      border-left: 1px solid $color-grey-3;
+      border-right: 1px solid $color-grey-3;
+      padding: 0 4rem;
+
+      &__logo {
+        width: 19.8rem;
+        height: 5.6rem;
+        margin-top: 3.2rem;
+        cursor: pointer;
+      }
+
+      &__paragraph {
+        max-width: 56.7rem;
+        text-align: center;
+        color: $color-grey-5;
+        margin-top: 4rem;
+      }
+
+      &__icons {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin-top: 6.4rem;
+
+        &__bg {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 6.4rem;
+          height: 6.4rem;
+          border-radius: 50%;
+          background: $color-grey-1;
+          transition: all 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+            color: $color-primary;
+            transition: all 0.2s;
+
+            img {
+              filter: $filter-primary;
+            }
+          }
+
+          &:active {
+            transform: translateY(-0.1rem) scale(0.95);
+            box-shadow: $shadow-3;
+            transition: all 0.2s;
+          }
+
+          &__icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    &__right {
+      max-width: 31.6rem;
+      height: 38.3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 4rem;
+      padding-top: 0.8rem;
+
+      &__heading {
+        text-align: left;
+      }
+
+      &__links {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        width: 26.5rem;
+        margin-top: 4.8rem;
+
+        &__page {
+          color: $color-grey-5;
+          text-decoration: none;
+
+          &:hover {
+            transform: translateX(1rem);
+            color: $color-primary;
+          }
+
+          &:active {
+            transform: translateX(0.1rem) scale(0.95);
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    border-top: 1px solid $color-grey-3;
+    padding: 1.6rem 0;
+    margin-top: 4.9rem;
+
+    a {
+      text-decoration: none;
+      color: $color-grey-5;
+    }
+  }
+
+  @include respond(big-desk) {
+    &__copyright {
+      text-align: center;
+      border-top: 1px solid $color-grey-3;
+      padding: 1.6rem 0;
+      margin-top: 4.9rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    padding: 8rem 4rem 0 4rem;
+
+    &__main {
+          flex-direction: column;
+          margin: 0;
+
+      &__left {
+              order: 1;
+              align-items: flex-start;
+              padding: 0;
+
+        &__contacts {
+          &__group {
+              align-items: flex-start;
+          }
+        }
+      }
+
+          &__center {
+            border: none;
+            padding: 0 0 6.4rem 0;
+
+            &__logo {
+              margin: 0;
+            }
+
+            &__paragraph {
+              margin-top: 3.2rem;
+            }
+
+            &__icons {
+              margin-top: 3.2rem;
+            }
+          }
+
+      &__right {
+              height: auto;
+              align-items: flex-end;
+              transform: translateY(15.3rem);
+              position: absolute;
+              right: 4rem;
+
+        &__links {
+                align-items: flex-end;
+        }
+      }
+    }
+
+    &__copyright {
+      padding: 2.4rem 0;
+      margin-top: 4.8rem;
+    }
+  }
+
+  @include respond(tab-port) {
+      padding: 8rem 4rem 0 4rem;
+
+    &__main {
+          flex-direction: column;
+          margin: 0;
+
+      &__left {
+              order: 1;
+              align-items: flex-start;
+              padding: 0;
+
+        &__contacts {
+          &__group {
+              align-items: flex-start;
+          }
+        }
+      }
+
+          &__center {
+            border: none;
+            padding: 0 0 6.4rem 0;
+
+            &__logo {
+              margin: 0;
+            }
+
+            &__paragraph {
+              margin-top: 3.2rem;
+            }
+
+            &__icons {
+              margin-top: 3.2rem;
+            }
+          }
+
+      &__right {
+              height: auto;
+              align-items: flex-end;
+              transform: translateY(15.3rem);
+              position: absolute;
+              right: 4rem;
+
+        &__links {
+                align-items: flex-end;
+        }
+      }
+    }
+
+    &__copyright {
+      padding: 2.4rem 0;
+      margin-top: 4.8rem;
+    }
+  }
+
+  @include respond(phone) {
+    padding: 0 1.6rem 0 1.6rem;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+
+      &__left {
+        order: 1;
+        align-items: flex-start;
+        padding: 0 0 6.4rem 0;
+
+        &__contacts {
+          row-gap: 1.6rem;
+          margin-top: 2.4rem;
+
+          &__group {
+            align-items: flex-start;
+          }
+        }
+      }
+
+      &__center {
+        border: none;
+        padding: 0 0 6.4rem 0;
+        width: 100%;
+
+        &__logo {
+          margin: 0;
+        }
+
+        &__paragraph {
+          margin-top: 3.2rem;
+        }
+
+        &__icons {
+          margin-top: 3.2rem;
+        }
+      }
+
+      &__right {
+        height: auto;
+        order: 2;
+        padding: 0;
+        align-items: flex-start;
+        position: static;
+        transform: none;
+
+        &__links {
+          gap: 1.6rem;
+          width: 26.5rem;
+          margin-top: 2.4rem;
+            align-items: flex-start;
+    
+        }
+      }
+    }
+
+    &__copyright {
+      padding: 2.4rem 0;
+      margin-top: 4.8rem;
+    }
+  }
+}

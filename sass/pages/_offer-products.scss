@@ -1,0 +1,52 @@
+.offer-products {
+  height: auto;
+  padding: 8rem 4rem;
+  background: $color-body;
+
+  &__content {
+    .cards-group {
+      display: flex;
+      flex-direction: row;
+      gap: 3.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @include respond(big-desk) {
+    &__content {
+      .cards-group {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    &__content {
+      .cards-group {
+        flex-direction: row;
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    &__content {
+      .cards-group {
+        flex-direction: column;
+        align-content: center;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    padding: 6.4rem 1.6rem;
+
+    &__content {
+      .cards-group {
+        row-gap: 2.4rem;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.btn-primary {
+  display: inline-flex;
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  color: $color-body;
+  overflow: hidden;
+  background: $color-secondary;
+  align-items: center;
+  gap: 2.4rem;
+  border: none;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  @include respond(phone) {
+      padding: 1.6rem 2.4rem;
+      gap: 1.6rem;
+  }
+
+  &:hover {
+    transition: all 0.2s;
+    transform: translateY(-0.3rem);
+    box-shadow: $shadow-2;
+
+    span {
+      transition: all 0.2s;
+      font-weight: 600;
+      color: $color-white;
+      animation: pulsate 1s infinite;
+    }
+
+    img {
+      filter: $filter-white;
+      transition: all 0.2s;
+      transform: translateX(5rem);
+      visibility: hidden;
+    }
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(-0.1rem) scale(.95);
+    box-shadow: $shadow-3;
+    transition: all 0.2s;
+  }
+}
+
+.btn-secondary {
+  display: inline-flex;
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  background: $color-body;
+  overflow: hidden;
+  align-items: center;
+  gap: 2.4rem;
+  border: none;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  @include respond(phone) {
+    padding: 1.6rem 2.4rem;
+    gap: 1.6rem;
+  }
+
+  &:hover {
+    transition: all 0.2s;
+    transform: translateY(-0.3rem);
+    box-shadow: $shadow-2;
+    background: $color-primary;
+
+    span {
+      transition: all 0.1s;
+      font-weight: 600;
+      animation: pulsate 1s infinite;
+      color: $color-body;
+    }
+
+    img {
+      transition: all 0.2s;
+      transform: translateX(5rem);
+      visibility: hidden;
+    }
+  }
+
+  &:active {
+    transition: all 0.2s;
+    outline: none;
+    transform: translateY(-0.1rem) scale(.95);
+    box-shadow: $shadow-3;
+  }
+}
+
+.btn-secondary-small {
+  display: inline-flex;
+  overflow: hidden;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1.6rem;
+  background: $color-body;
+  align-items: center;
+  gap: 1.6rem;
+  border: none;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  cursor: pointer;
+}
+
+.btn-outline {
+  display: inline-flex;
+  overflow: hidden;
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  color: $color-body;
+  border: 1px solid $color-body;
+  align-items: center;
+  gap: 2.4rem;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  transition: all 0.2s;
+  cursor: pointer;
+  height: 8rem;
+
+  span {
+    width: 11.1rem;
+  }
+  
+
+
+  &:hover {
+    transition: all 0.2s;
+    transform: translateY(-0.3rem);
+    box-shadow: $shadow-2;
+    border: 1px solid $color-primary;
+
+    span {
+      transition: all 0.2s;
+      animation: pulsate 1s infinite;
+      font-weight: 600;
+      color: $color-primary;
+    }
+
+    img {
+      transition: all 0.2s;
+      transform: translateX(5rem);
+      visibility: hidden;
+      filter: $filter-primary;
+    }
+  }
+
+  &:active {
+    transition: all 0.2s;
+    outline: none;
+    transform: translateY(-0.1rem) scale(.95);
+    box-shadow: $shadow-3;
+  }
+}
+
+.btn-outline-small {
+  display: inline-flex;
+  overflow: hidden;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1.6rem;
+  border: 1px solid $color-body;
+  align-items: center;
+  gap: 1.6rem;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  cursor: pointer;
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  max-width: 16.4rem;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  background: $color-white;
+  align-items: center;
+  gap: 1.2rem;
+  border: none;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  cursor: pointer;
+  transition: all 0.2s;
+
+
+  &:hover {
+    transition: all 0.2s;
+    transform: scale(1.05);
+    box-shadow: $shadow-2;
+    border: 1px solid $color-secondary;
+
+    span {
+      transition: all 0.2s;
+      animation: pulsate-3 1s infinite;
+      font-weight: 600;
+      color: $color-secondary;
+    }
+
+    img {
+      transition: all 0.2s;
+      transform: translateX(5rem);
+      visibility: hidden;
+    }
+  }
+
+  &:active {
+    transition: all 0.2s;
+    outline: none;
+    transform: translateY(-0.1rem) scale(.95);
+    box-shadow: $shadow-3;
+  }
+  
+}
+
+.btn-link-small {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  align-items: center;
+  gap: 1.2rem;
+  border: none;
+  text-transform: capitalize;
+  box-shadow: $shadow-1;
+  cursor: pointer;
+}
