@@ -1346,7 +1346,7 @@ body {
   .hero {
     height: 53.6rem;
     align-items: center;
-    background: url(../../public/img/hero-mobile.png) lightgray center/cover no-repeat;
+    background: url(../public/img/hero-mobile.png) lightgray center/cover no-repeat;
   }
   .hero__content {
     width: 33.6rem;
